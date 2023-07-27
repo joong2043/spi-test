@@ -57,7 +57,7 @@ public class ArticleService {
             }
         }
         else {
-            logger.info("(충돌) 이미 다른 에디터가 글을 수정중입니다. 수정이 완료될 때 까지 기다려주세요. 충돌 시간 : " + LocalDateTime.now() +", 수정 내용 : "+editContent);
+            logger.warn("(충돌) 이미 다른 에디터가 글을 수정중입니다. 수정이 완료될 때 까지 기다려주세요. 충돌 시간 : " + LocalDateTime.now() +", 수정 내용 : "+editContent);
             return null;
         }
     }

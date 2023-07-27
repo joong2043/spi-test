@@ -73,7 +73,7 @@ public class ArticleServiceTest {
     }
 
     @Test
-    public void 여러명이_동시에_글을_수정할_때_충돌_테스트() throws Exception {
+    public void 여러명이_동시에_글을_수정할_때_충돌이_발생합니다() throws Exception {
 
         int threadCount = 10;
 
@@ -109,7 +109,7 @@ public class ArticleServiceTest {
     }
 
     @Test
-    public void 첫번째_글과_2번째_글을_동시에_수정_가능한지_테스트() throws InterruptedException {
+    public void 첫번째_글과_두번째_글을_동시에_수정_가능한지_테스트() throws InterruptedException {
         int threadCount = 10;
 
         ExecutorService executorService = Executors.newFixedThreadPool(10);
